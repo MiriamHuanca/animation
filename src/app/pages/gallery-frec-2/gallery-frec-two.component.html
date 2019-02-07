@@ -1,0 +1,21 @@
+<main class="position-relative overflow-hidden">
+  <header class="header section overlay gradient gradient-54 alpha-8 color-1 image-background cover pt-4">
+    <div class="container row align-items-center my-auto p-8">
+      <div class="col-md-10 mx-auto">
+        <h1 class="regular display-4 color-1 m-0">Animation Two
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <section class="section mt-7n">
+    <div class="container ">
+      <img [src]="photoUrl" [@photoState]="position" class="m-4">
+
+      <button (click)="changePosition('move')" class="button">Translate</button>
+      <button (click)="changePosition('spin')" class="button">Rotate</button>
+      <button (click)="changePosition('enlarge')" class="button">Scale</button>
+      <button (click)="changePosition(null)" class="button">Reset</button>
+    </div>
+  </section>
+</main>
